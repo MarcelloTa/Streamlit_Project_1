@@ -1,0 +1,52 @@
+THEMA: IMDb Movies
+
+Datenquelle: kaggle.com
+
+CSV: https://www.kaggle.com/datasets/amanbarthwal/imdb-movies-data
+
+Was soll dargestellt werden:
+
+- TOP x Filme nach Genre
+- … nach Regisseur
+- … nach Laufzeit
+- 
+
+
+
+1. WELCHE DATEN UND WAS?
+
+- imdb-Datensatz von kaggle.com (Mai '24)
+- Verschiedene Auswertungen der Filme pro Seite
+
+
+2. MINIMALLÖSUNG
+
+- Seite 1:
+Übersicht der Filme mit Filteroptionen, z. B. Genre, Erscheinungsjahr, Bewertung
+
+- Seite 2:
+Detaillierte Filmanalyse mit Informationen wie z. B. Handlung, Besetzung, Regisseur etc.
+
+- Seite 3:
+Genre-Entwicklung über die Jahrzehnte in Abhängigkeit von der Bewertung
+
+
+3. DELUXE-VERSION
+
+- Random-Button Seite 2
+- Filmvorschläge Seite 3
+- Sprachoptionen
+- Dark Mode / Light Mode??
+- Übergeordnetes Theme-Model
+- Veröffentlichung
+
+
+4. WER MACHT WAS?
+
+- Josephine:
+
+
+- Marcello:
+
+
+- Pascal:
