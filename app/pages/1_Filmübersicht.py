@@ -1,10 +1,5 @@
-from cProfile import label
-
 import pandas as pd
-import plotly.express as px
 import streamlit as st
-import time
-import datetime
 
 # Tab-Titel und -Icon festlegen:
 st.set_page_config(page_title='FDF | Finde Deine Filme', page_icon=':film_frames:')
