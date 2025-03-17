@@ -7,7 +7,7 @@ st.set_page_config(page_title='FDF | Finde Deine Filme', page_icon=':film_frames
 st.title("Detaillierte Filmangaben :mag_right:")
 
 # csv lesen
-load_imdb = pd.read_csv(r'C:\Users\Admin\Documents\DataCraft\11_Datenvisualisierung_mit_Python\Streamlit_Project_1\data\imdb_clean.csv')
+load_imdb = pd.read_csv(r'./data/imdb_clean.csv')
 
 
 # eingabefeld film
