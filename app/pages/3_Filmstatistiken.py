@@ -3,8 +3,8 @@ import plotly.express as px
 import streamlit as st
 
 # DataFrame laden:
-# movies = pd.read_csv(r'C:\Users\Admin\Documents\DataCraft\11_Datenvisualisierung_mit_Python\Streamlit_Project_1\data\imdb_clean.csv')
-movies = pd.read_csv(r'..\data\imdb_clean.csv')
+movies = pd.read_csv(r'C:\Users\Admin\Documents\DataCraft\11_Datenvisualisierung_mit_Python\Streamlit_Project_1\data\imdb_clean.csv')
+
 
 # Tab-Titel und -Icon festlegen:
 st.set_page_config(page_title='FDF | Finde Deine Filme', page_icon=':film_frames:')
