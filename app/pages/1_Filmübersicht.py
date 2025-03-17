@@ -4,7 +4,7 @@ import streamlit as st
 # Tab-Titel und -Icon festlegen:
 st.set_page_config(page_title='FDF | Finde Deine Filme', page_icon=':film_frames:')
 
-customers = pd.read_csv(r'C:/Users/Admin/Documents/DataCraft/11_Datenvisualisierung_mit_Python/Streamlit_Project_1/data/imdb_clean.csv')
+customers = pd.read_csv(r'../data/imdb_clean.csv')
 
 
 categorical_cols = customers["Genre"].unique()
