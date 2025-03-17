@@ -1,11 +1,14 @@
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title='Page 2 - Detailierte Filmangaben')
-st.title("Detailierte Filmangaben")
+# Tab-Titel und -Icon festlegen:
+st.set_page_config(page_title='FDF | Finde Deine Filme', page_icon=':film_frames:')
+
+st.title("Detaillierte Filmangaben :mag_right:")
 
 # csv lesen
-load_imdb = pd.read_csv(r'C:\Users\Admin\Documents\DataCraft\11_Datenvisualisierung_mit_Python\Streamlit_Project_1\data\imdb_clean.csv')
+# load_imdb = pd.read_csv(r'C:\Users\Admin\Documents\DataCraft\11_Datenvisualisierung_mit_Python\Streamlit_Project_1\data\imdb_clean.csv')
+load_imdb = pd.read_csv(r'..\data\imdb_clean.csv')
 
 # eingabefeld film
 filmtitel = st.text_input('Bitte Filmtitel eingeben:')
@@ -41,12 +44,14 @@ if filmtitel:
     else:
         st.error('Bitte überprüfe die Schreibweise.')
 
-else:
-    st.info('Bitte gib einen Filmtitel ein.')
-
+# Trennstreifen mit extra Abstand darunter zum Ausgleich
+st.divider()
+st.markdown('')
 
 # random button
-if st.button('Zufallsfilm'):
+st.write("Oder lass' den Zufall entscheiden:")
+
+if st.button('Zufallsfilm', type='primary'):
     zufallsfilm = load_imdb.sample(1).iloc[0]
 
     st.success(f'Dein Zufallsfilm ist: {zufallsfilm['Title']}')
